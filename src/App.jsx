@@ -21,6 +21,9 @@ import Products from './pages/dashboard/Products';
 import BulkProducts from './pages/dashboard/BulkProducts';
 import Orders from './pages/dashboard/Orders';
 import BulkOrders from './pages/dashboard/BulkOrders';
+import Customers from './pages/dashboard/Customers';
+import Categories from './pages/dashboard/Categories';
+import StockHistory from './pages/dashboard/StockHistory';
 import PublicCatalog from './pages/dashboard/PublicCatalog';
 import Settings from './pages/dashboard/Settings';
 import Billing from './pages/dashboard/Billing';
@@ -166,6 +169,36 @@ function AppRoutes() {
             <ProtectedRoute>
               <DashboardLayout>
                 <PublicCatalog />
+              </DashboardLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard/customers"
+          element={
+            <ProtectedRoute>
+              <DashboardLayout>
+                <Customers />
+              </DashboardLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard/categories"
+          element={
+            <ProtectedRoute>
+              <DashboardLayout>
+                <Categories />
+              </DashboardLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard/stock-history"
+          element={
+            <ProtectedRoute>
+              <DashboardLayout>
+                <StockHistory />
               </DashboardLayout>
             </ProtectedRoute>
           }

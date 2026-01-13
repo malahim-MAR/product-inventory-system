@@ -13,16 +13,22 @@ import {
     Bell,
     Search,
     ChevronDown,
-    Upload
+    Upload,
+    Users,
+    Tags,
+    History
 } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 
 const navItems = [
     { path: '/dashboard', icon: LayoutDashboard, label: 'Dashboard', end: true },
     { path: '/dashboard/products', icon: Package, label: 'Products' },
-    { path: '/dashboard/products/bulk', icon: Upload, label: 'Bulk Products', indent: true },
+    { path: '/dashboard/products/bulk', icon: Upload, label: 'Bulk Upload', indent: true },
+    { path: '/dashboard/categories', icon: Tags, label: 'Categories', indent: true },
+    { path: '/dashboard/stock-history', icon: History, label: 'Stock History', indent: true },
     { path: '/dashboard/orders', icon: ShoppingCart, label: 'Orders' },
     { path: '/dashboard/orders/bulk', icon: Upload, label: 'Bulk Orders', indent: true },
+    { path: '/dashboard/customers', icon: Users, label: 'Customers' },
     { path: '/dashboard/catalog', icon: Globe, label: 'Public Catalog' },
     { path: '/dashboard/settings', icon: Settings, label: 'Settings' },
     { path: '/dashboard/billing', icon: CreditCard, label: 'Billing / Plan' },
